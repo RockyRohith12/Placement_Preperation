@@ -1,6 +1,4 @@
-import pypandoc
-
-readme = r"""# Placement Preparation
+## My Placement Journey
 
 **Name:** V Rohith  
 **Date:** 16 October 2026
@@ -277,6 +275,4 @@ System.out.println("Maximum negative Double value: " + (-Double.MIN_VALUE));
 *Consistency is the key to success. One day at a time, one concept at a time.*
 """
 
-output_path = "/mnt/data/README.md"
-pypandoc.convert_text(readme, "md", format="md", outputfile=output_path, extra_args=["--standalone"])
-print(f"Updated README.md: {output_path}")
+
