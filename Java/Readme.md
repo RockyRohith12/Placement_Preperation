@@ -1,4 +1,4 @@
-## My Placement Journey
+# My Placement Journey
 
 **Name:** V Rohith  
 **Date:** 16 October 2026
