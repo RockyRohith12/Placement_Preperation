@@ -1,278 +1,154 @@
-# My Placement Journey
+# Java Programming & Placement Preparation
 
-**Name:** V Rohith  
+A structured record of my Java learning journey as I strengthen my programming fundamentals and prepare for technical placements through consistent hands-on practice.
+
+---
+
+## About This Repository
+
+This repository documents my progress in learning Java from the basics. Each concept is supported by practical programs and exercises, helping me connect programming theory with implementation.
+
+My focus is to build a strong foundation in Core Java, develop problem-solving skills, and gradually progress toward Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and placement-oriented projects.
+
+---
+
+# Learning Log
+
+## Day 1 — Java Fundamentals and Data Types
+
 **Date:** 16 October 2026
 
-This repository documents my Java learning journey as part of my placement preparation.
+### Concepts Covered
 
-# Day 1 — Java Fundamentals
+- **Java, JDK, JRE, and JVM**
+  - Understood Java as a programming language and learned the roles of the development kit, runtime environment, and virtual machine.
+- **How Java code runs**
+  - Followed the basic flow from writing a `.java` source file to compiling it into bytecode and executing it on the JVM.
+- **Structure of a Java program**
+  - Practiced the class structure, curly braces, statements, and the `main()` method as the program's entry point.
+- **Output with `System.out.println()`**
+  - Printed text and values to the console.
+- **Primitive data types**
+  - Practiced Java's eight primitive types: `byte`, `short`, `int`, `long`, `float`, `double`, `char`, and `boolean`.
+- **Numeric limits**
+  - Explored the minimum and maximum values supported by numeric data types.
+- **Type conversion and casting**
+  - Learned the difference between widening conversion and narrowing conversion, including explicit casts.
+- **Strings**
+  - Worked with String values and common operations, and learned the difference between comparing String references with `==` and comparing their contents with `.equals()`.
 
-## 1. JDK, JRE, and JVM
+### Practice File
 
-These are the three important components to understand before learning how Java programs execute.
-
-### JVM — Java Virtual Machine
-
-The JVM is responsible for executing Java bytecode.
-
-- Loads Java `.class` files.
-- Verifies bytecode before execution.
-- Executes bytecode using an interpreter and Just-In-Time (JIT) compilation.
-- Helps Java programs run on different operating systems when a compatible JVM is available.
-
-### JRE — Java Runtime Environment
-
-The JRE provides the runtime components required to run Java applications.
-
-It conceptually includes:
-
-- JVM
-- Java libraries and supporting runtime components
-
-**Purpose:** To run Java applications.
-
-### JDK — Java Development Kit
-
-The JDK provides the tools required to develop Java applications.
-
-It includes:
-
-- Java compiler (`javac`)
-- Java launcher (`java`)
-- JVM and runtime components
-- Other development tools
-
-**Purpose:** To write, compile, debug, and run Java programs.
-
-### Difference Between JDK, JRE, and JVM
-
-| Component | Main Purpose |
-| --- | --- |
-| JDK | Develop and run Java programs |
-| JRE | Provide the environment to run Java programs |
-| JVM | Execute Java bytecode |
-
-**Remember:** JDK is for development, JRE is for runtime, and JVM executes bytecode. Modern Java distributions may package these components differently.
+- [`test.java`](Java/datatypes/test.java) — examples of primitive data types, numeric limits, type conversion, casting, and String operations.
 
 ---
 
-## 2. How a Java Program Executes
+## Day 2 — Operators, Conditions, Loops, and Arrays
 
-A Java program follows this basic execution pipeline:
+**Date:** 17 October 2026
 
-1. **Source code:** Write the program in a `.java` file.
-2. **Compilation:** The Java compiler (`javac`) converts source code into bytecode.
-3. **Bytecode:** The compiled program is stored in a `.class` file.
-4. **Execution:** The JVM loads and executes the bytecode.
-5. **Output:** The program produces its result.
+### Concepts Covered
 
-### Example
+- **Arithmetic operators**
+  - Performed calculations using operators such as `+`, `-`, `*`, `/`, and `%`.
+- **Assignment operators**
+  - Assigned values to variables and practiced shorthand forms such as `+=` and `-=`.
+- **Increment and decrement operators**
+  - Practiced increasing or decreasing a variable's value using `++` and `--`.
+- **Bitwise operators**
+  - Explored operators such as `&` and `|` at the binary level and viewed integer values in binary form.
+- **Relational and logical operators**
+  - Compared values and combined conditions using operators such as `>`, `==`, `&&`, `||`, and `!`.
+- **Conditional statements**
+  - Used `if`, `else if`, and `else` to choose which block of code should run based on a condition.
+- **`switch` statement**
+  - Practiced selecting a code path from multiple cases based on an expression's value.
+- **Ternary operator**
+  - Used `condition ? valueIfTrue : valueIfFalse` as a compact alternative for simple conditional expressions.
+- **Loops**
+  - Practiced `for`, `while`, and `do-while` loops to repeat instructions, noting that a `do-while` loop checks its condition after running the loop body.
+- **Arrays**
+  - Declared arrays, accessed elements by index, used `arr.length`, and traversed array elements with loops.
+- **User input with `Scanner`**
+  - Read input from the console and used it in a program.
 
-Source file: `Test.java`
+### Practice Files
 
-```java
-class Test {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
-```
+- [`arithmetic.java`](Java/datatypes/arithmetic.java) — arithmetic, assignment, increment/decrement, bitwise, relational, and logical operators.
+- [`conditional.java`](Java/datatypes/conditional.java) — `if-else`, `switch`, and ternary operator examples.
+- [`loops.java`](Java/datatypes/loops.java) — `for`, `while`, and `do-while` loop examples.
+- [`array.java`](Java/datatypes/array.java) — array declaration, user input with `Scanner`, and array traversal.
 
-Compile and execute:
+---
 
-```bash
-javac Test.java
-java Test
-```
+## Skills Developed
 
-Output:
+Through these practice sessions, I am developing skills in:
+
+- **Programming fundamentals:** understanding Java program structure, variables, data types, and output.
+- **Working with data:** choosing primitive data types and converting values when needed.
+- **Decision-making:** controlling program flow with conditions and `switch` statements.
+- **Repetition and iteration:** using loops to repeat tasks and process sequences of values.
+- **Basic data handling:** storing and accessing multiple values using arrays.
+- **Input and output:** accepting user input and displaying results in the console.
+- **Bitwise reasoning:** exploring how bitwise operators work on integer values.
+- **Code organization:** maintaining practice programs in a GitHub repository.
+
+---
+
+## Repository Structure
 
 ```text
-Hello World!
+Placement_Preperation/
+├── README.md
+└── Java/
+    └── datatypes/
+        ├── test.java
+        ├── arithmetic.java
+        ├── conditional.java
+        ├── loops.java
+        └── array.java
 ```
 
-**Key takeaway:** Java bytecode is platform-independent, while the JVM implementation is platform-specific.
+> The Java source files declare the package `Java.datatypes`. Keep the directory structure consistent with the package name when running the programs from the project root.
 
 ---
 
-## 3. Structure of a Java Program
+## Learning Outcome
 
-```java
-public class Test {
-    public static void main(String[] args) {
-        System.out.println("Hello, Rohith!");
-    }
-}
-```
-
-### Important Parts
-
-- `public class Test` — declares a public class named `Test`.
-- `public static void main(String[] args)` — declares the main method, the standard entry point for launching a Java application.
-- `System.out.println()` — prints a value followed by a new line.
-- Curly braces `{ }` — define blocks of code.
-- Semicolon `;` — terminates statements such as variable declarations and method calls.
-
-**Important:** If a class is declared `public`, its name must match the filename, including capitalization. For example, `public class Test` belongs in `Test.java`.
+So far, I have learned how Java programs are structured and executed, practiced primitive data types and Strings, and written programs using operators, conditions, loops, arrays, and basic console input. These concepts form the foundation for learning methods, Object-Oriented Programming, and problem-solving with DSA.
 
 ---
 
-## 4. Understanding the Main Method
+## Upcoming Learning Roadmap
 
-```java
-public static void main(String[] args)
-```
-
-| Keyword | Meaning |
-| --- | --- |
-| `public` | Allows the method to be accessed from outside its class |
-| `static` | Allows the method to be called without creating an instance of the class |
-| `void` | Indicates that the method does not return a value |
-| `main` | The method name recognized as the application's entry point |
-| `String[] args` | An array that receives command-line arguments |
+- [ ] Revise Java fundamentals and solve beginner-level exercises
+- [ ] Learn methods, parameters, return values, and method calling
+- [ ] Learn Object-Oriented Programming: classes, objects, constructors, inheritance, polymorphism, abstraction, and encapsulation
+- [ ] Practice arrays and Strings through coding problems
+- [ ] Begin Data Structures and Algorithms (DSA)
+- [ ] Continue practicing Git and GitHub workflows
+- [ ] Build projects that connect with AI & Machine Learning
 
 ---
 
-## 5. Understanding `System.out.println()`
+## Author
 
-```java
-System.out.println("Hello World!");
-```
+### V Rohith
 
-- `System` — a class from the `java.lang` package.
-- `out` — a static field that refers to the standard output stream.
-- `println()` — a method that prints a value followed by a new line.
-- `"Hello World!"` — the string being printed.
+B.Tech — Computer Science Engineering (AI & ML)
 
-The semicolon `;` terminates the statement.
+[LinkedIn Profile](https://www.linkedin.com/in/v-rohith-90518535b)
 
 ---
 
-## 6. Java Primitive Data Types
+## Learning Philosophy
 
-Java has eight primitive data types.
+> Strong programming skills are built through consistent practice, curiosity, and a willingness to learn from mistakes.
 
-### A. Integral Types
+> This repository represents my step-by-step journey toward becoming a stronger programmer and preparing for technical placements.
 
-Used to represent whole numbers.
+### Current Progress
 
-| Data Type | Size | Description |
-| --- | --- | --- |
-| `byte` | 1 byte | Small integer values |
-| `short` | 2 bytes | Short integer values |
-| `int` | 4 bytes | Standard integer type |
-| `long` | 8 bytes | Large integer values |
-
-### B. Floating-Point Types
-
-Used to represent decimal and fractional values.
-
-| Data Type | Size | Description |
-| --- | --- | --- |
-| `float` | 4 bytes | Single-precision floating-point value |
-| `double` | 8 bytes | Double-precision floating-point value |
-
-Examples:
-
-```java
-float price = 123.45f;
-double salary = 45000.75;
-```
-
-The `f` suffix indicates a `float` literal. Decimal literals are `double` by default.
-
-### C. Boolean Type
-
-Used for logical values.
-
-```java
-boolean isAdult = false;
-boolean isR = true;
-```
-
-A Boolean value can be either `true` or `false`. Java does not specify a fixed storage size for the `boolean` type.
-
-### D. Character Type
-
-Used to represent a single UTF-16 code unit.
-
-```java
-char grade = 'A';
-```
-
-The `char` type occupies 2 bytes.
-
-### Complete List
-
-| Type | Size |
-| --- | --- |
-| `byte` | 1 byte |
-| `short` | 2 bytes |
-| `int` | 4 bytes |
-| `long` | 8 bytes |
-| `float` | 4 bytes |
-| `double` | 8 bytes |
-| `char` | 2 bytes |
-| `boolean` | Not precisely specified by the Java language |
-
----
-
-## 7. Minimum and Maximum Values
-
-Java wrapper classes provide constants for numeric type limits.
-
-```java
-System.out.println(Byte.MIN_VALUE);
-System.out.println(Byte.MAX_VALUE);
-
-System.out.println(Short.MIN_VALUE);
-System.out.println(Short.MAX_VALUE);
-
-System.out.println(Integer.MIN_VALUE);
-System.out.println(Integer.MAX_VALUE);
-
-System.out.println(Long.MIN_VALUE);
-System.out.println(Long.MAX_VALUE);
-```
-
-For floating-point types:
-
-```java
-System.out.println("Minimum positive Float value: " + Float.MIN_VALUE);
-System.out.println("Maximum positive Float value: " + Float.MAX_VALUE);
-System.out.println("Minimum negative Float value: " + (-Float.MAX_VALUE));
-System.out.println("Maximum negative Float value: " + (-Float.MIN_VALUE));
-
-System.out.println("Minimum positive Double value: " + Double.MIN_VALUE);
-System.out.println("Maximum positive Double value: " + Double.MAX_VALUE);
-System.out.println("Minimum negative Double value: " + (-Double.MAX_VALUE));
-System.out.println("Maximum negative Double value: " + (-Double.MIN_VALUE));
-```
-
-**Important learning point:** `Float.MIN_VALUE` and `Double.MIN_VALUE` represent the smallest positive nonzero values, not the most negative values. To find the most negative values, use `-Float.MAX_VALUE` and `-Double.MAX_VALUE`.
-
----
-
-## 8. Key Takeaways
-
-- Understood the purpose of the JDK, JRE, and JVM.
-- Learned the Java compilation and execution process.
-- Practiced writing the main method and printing output.
-- Learned the role of semicolons in Java statements.
-- Studied all eight primitive data types.
-- Practiced checking numeric limits using wrapper classes.
-
-## 9. Next Steps
-
-- Practice type conversion and type casting.
-- Learn Java operators.
-- Study conditional statements (`if`, `else`, and `switch`).
-- Practice writing simple Java programs.
-- Begin solving beginner-level programming problems.
-
----
-
-*Consistency is the key to success. One day at a time, one concept at a time.*
-"""
-
-
+**Core Java Fundamentals:** In Progress 🚀  
+**Next Target:** Methods and Object-Oriented Programming
