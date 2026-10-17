@@ -55,12 +55,104 @@ public class test {
 
         // Character = 2 bytes 
 
-        char grade = 'A';
+        char grade = 'n';
         System.out.println("Character is: "+grade);
         System.out.println("Character Minimum value: "+(int)Character.MIN_VALUE);
-        System.out.println("Character Maximum value: "+(int)Character.MAX_VALUE);
+        System.out.println("Character Maximum value: "+(int)Character.MAX_VALUE); //65535 char are present
 
 
+        //Typecasting = conversion of one datatype to another
 
+        System.out.println("Integer value of grade: "+(int)grade);
+        System.out.println("Integer to char: "+ (char)10084);
+        System.out.println();
+
+        //ASCII = 0 to 127 is its range, contains English language alphabets 
+
+
+        //Widening conversion or implicit = storing a small data into bigger datatypes 
+
+        byte A = 10;
+        short B = A;
+        int C = B;
+        long D = C;
+        float E = D;
+        double F = E;
+        
+        System.out.println("Widening Example : ");
+        System.out.println("byte: "+A);
+        System.out.println("short : "+B);
+        System.out.println("int: "+C);
+        System.out.println("long : "+D);
+        System.out.println("float : "+E);
+        System.out.println("double : "+F);
+        System.out.println();
+
+        // Narrowing conversion or explicit = opposite of widening 
+
+        double p = 123.4561234567894556;
+        float q = (float)p;
+        long r = (long)q;
+        int s = (int)r;
+
+        System.out.println("Narrowing Example : ");
+        System.out.println("double: "+p);
+        System.out.println("float: "+q);
+        System.out.println("long: "+r);
+        System.out.println("int: "+s);
+        System.out.println();
+
+        // Strings = created by 2 methods
+        //String is immutable
+
+        // 1. Literals and 2. Using constructors
+
+        String s1 = "Hello";
+        String s2 = "Hello";
+        String s3 = new String("Hello");
+
+        // jvm uses heap memory to create objects, pools same data
+        //single values are stored in stack
+
+        System.out.println(s1 == s2); // same reference in pool
+        System.out.println(s2 == s3); // different objects
+        System.out.println(s1.equals(s3));  // same content
+
+        System.out.println();
+    
+        // uppercase and lowercase
+        String S = "Hello";
+        String T = S.toUpperCase();  //we need to store it into another variable
+        System.out.println(S);
+        System.out.println(T);
+        System.out.println(T.toLowerCase());
+
+        System.out.println();
+        // Common String operations
+
+        String text = "Hello World";
+
+        // 1.Length
+
+        System.out.println(text.length());
+
+        // 2. Accessing characters
+
+        System.out.println(text.charAt(6));
+
+        // 3. Substring
+
+        System.out.println(text.substring(0,5));
+
+        //4. Contains, startsWith, endsWith
+
+        System.out.println(text.contains("World"));
+        System.out.println(text.endsWith("World"));
+        System.out.println(text.startsWith("World"));
+
+        // 5. Replace
+        
+        String newtext = text.replace("World", "Java");
+        System.out.println(newtext);
     }
 }
