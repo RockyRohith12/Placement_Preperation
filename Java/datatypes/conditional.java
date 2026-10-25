@@ -1,4 +1,4 @@
-package Java.datatypes;
+
 
 public class conditional {
     public static void main(String[] args){
@@ -29,6 +29,15 @@ public class conditional {
 
         // Switch statement  
 
+        //Syntax = switch(expression){
+        //           case value1:
+        //               code
+        //               break;
+        //         default: 
+        //            code
+        //             }
+
+        
         int day = 3;
 
         switch (day) {
